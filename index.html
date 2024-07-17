@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPIC</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img
+        id="logo"
+        src="https://colonysquare.com/wp-content/uploads/2023/02/ipic_theaters_logo_refresh_redblack.png"
+        alt="logo"
+      />
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#movies-container">Movies</a></li>
+          <li><a href="#menu-items">Food</a></li>
+          <li><a href="#">Parties & Events</a></li>
+          <li><a href="footer-feature">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="reserveSits"></div>
+    <h1 id="playing">Playing at IPIC</h1>
+    <div class="movies-container" id="movies-container"></div>
+
+    <section class="ipic-life">
+      <h2>IPIC Life</h2>
+      <div class="menu-items" id="menu-items"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-feature">
+          <img
+            src="https://www.ipic.com/assets/img/home/food_discount_icon_black.svg"
+            alt="10% Off Food & Beverage"
+          />
+          <p>
+            10% OFF FOOD & BEVERAGE<br /><small
+              >Excluding alcohol in GA and TX</small
+            >
+          </p>
+        </div>
+        <div class="footer-feature">
+          <img
+            src="https://www.ipic.com/assets/img/home/rewardPoints_black.png"
+            alt="Earn Reward Points"
+          />
+          <p>Earn Reward Points</p>
+        </div>
+        <div class="footer-feature">
+          <img
+            src="https://www.ipic.com/assets/img/home/b-day_ticket_icon_black.svg"
+            alt="Premium Plus B-Day Ticket"
+          />
+          <p>Premium Plus B-Day Ticket</p>
+        </div>
+        <div class="footer-join">
+          <button>Join Now</button>
+          <p>
+            <a href="#">Membership Terms</a><br />Already a Member?
+            <a href="#">Log In</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-column">
+          <h3>IPIC</h3>
+          <p>
+            IPIC Fulton Market<br />11 Fulton St<br />New York NY, 10038<br />212-776-8272
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Membership Terms</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Gift Cards & Terms of Sale</a></li>
+            <li><a href="#">Do Not Sell My Personal Information</a></li>
+            <li><a href="#">Face Covering Policy</a></li>
+            <li><a href="#">Sweepstakes Terms</a></li>
+            <li><a href="#">ADA Seating Compliance</a></li>
+            <li><a href="#">ADA Compliance</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About IPIC</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Advertising & Partnerships</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Social</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; All Rights Reserved, Karine Berdigulova 2024</p>
+      </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="reserve.js"></script>
+    <script type="module" src="ipic-life.js"></script>
+
+    <script type="module">
+      import { displayReserve } from "./reserve.js";
+      displayReserve();
+      import { displayIPICLife } from "./ipic-life.js";
+      displayIPICLife();
+    </script>
+  </body>
+</html>
